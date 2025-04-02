@@ -10,5 +10,5 @@ int sum(int x, int y)
     int a, b;
     cout<<"Enter a value of a and b : ";
     cin>>a>>b;
-    cout<<sum(a,b);
+    cout<<sum(a, b);
  }
