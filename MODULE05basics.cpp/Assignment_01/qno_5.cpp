@@ -8,3 +8,4 @@ int main()
     cin>>r;
     cout<<"circumference of a circle is "<<(2*M_PI*r);
 }
+2
