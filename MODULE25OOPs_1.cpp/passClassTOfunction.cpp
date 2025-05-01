@@ -9,6 +9,7 @@ private:
     bool alive;
 
 public:
+    // Getter methid 
     int getHealth() {    // member function 
         return health;
     }
@@ -21,7 +22,7 @@ public:
     bool getAlive() {
         return alive;
     }
-
+     // Setter methid
     void setHealth(int h) {    // member function 
         this->health = h;
     }
