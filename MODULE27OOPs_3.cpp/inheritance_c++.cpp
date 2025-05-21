@@ -12,6 +12,9 @@ public:
 class Bike : public Vehicle{
 public: 
     int handleSize;
+    Bike(){
+        cout<<"Bike constructor called"<<endl;
+    }
 };
 
 class  Car : public Vehicle{
