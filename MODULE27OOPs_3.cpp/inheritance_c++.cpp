@@ -14,6 +14,7 @@ public:
     int handleSize;
     Bike(){
         cout<<"Bike constructor called"<<endl;
+        cout<<"Tyre Size: "<<tyreSize<<endl;
     }
 };
 
