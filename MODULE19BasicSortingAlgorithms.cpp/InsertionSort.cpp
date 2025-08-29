@@ -21,7 +21,7 @@ int main ()
 
         while(j>=1 && arr[j] < arr[j-1]){
           swap (arr[j],arr[j-1]);
-            j-- ;
+          j-- ;
         }
     }
 
