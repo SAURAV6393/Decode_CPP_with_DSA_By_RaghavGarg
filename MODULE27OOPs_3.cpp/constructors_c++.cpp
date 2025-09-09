@@ -22,11 +22,16 @@ public:
 
 int main() {
     Bike tvs(23); // constructor with prize argument
-    Bike shine;   // default constructor
+    // Bike shine;   // default constructor
 
     tvs.name = "Honda";
     tvs.prize = 78009;  // updating prize
     tvs.colour = "red";
 
-    cout << tvs.name << endl << tvs.prize << endl << tvs.colour << endl;
+    // cout << tvs.name << endl << tvs.prize << endl << tvs.colour << endl;
+    Bike Hero;
+    Hero.name = "Hero Honda";
+    Hero.prize = 344214;
+    Hero.colour = "Black";
+    cout<< "Bike name : " <<Hero.name<<endl <<"Bike prize :"<< Hero.prize<<endl<<"Bike colour :"<< Hero.colour;
 }
