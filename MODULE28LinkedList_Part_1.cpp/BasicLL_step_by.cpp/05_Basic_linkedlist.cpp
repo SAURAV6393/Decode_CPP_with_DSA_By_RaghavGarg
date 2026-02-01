@@ -138,7 +138,7 @@ int main(){
     ll.display();
     ll.getAtIdx(2); // 15
     ll.getAtIdx(4); // 30
-    ll.deleteAtHead(3); // { head = 10->15->20->40->50->NULL; }
+    ll.deleteAtHead(); // { head = 10->15->20->40->50->NULL; }
     ll.display();
     ll.deleteAtTail(); // { head = 10->15->20->40->NULL; }
     ll.display();
