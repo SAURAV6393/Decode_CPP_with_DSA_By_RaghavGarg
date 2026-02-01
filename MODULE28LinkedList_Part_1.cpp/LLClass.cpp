@@ -5,7 +5,7 @@ class Node { // User defined data type
     public:
         int val;
         Node* next;
-        Node(int val) {  // Linked list Node Constructor 
+        Node(int val) {  // Linked list Node Constructor []
             this->val = val;
             this->next = NULL;
         }

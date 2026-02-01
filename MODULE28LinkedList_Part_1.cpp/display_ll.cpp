@@ -9,26 +9,26 @@ class Node{
         this->next = NULL;
     }
 };
-// simple Display
-
-// void display(Node* head){
-//     Node* temp = head;
-//     int count = 0;
-//     while(temp != NULL){
-//         cout<<temp->val<<" ";
-//         temp = temp->next;
-//         count++;
-//     }
-//     cout<<endl;
-//     cout<<"Length of Linked List is: "<<count<<endl;
-// }
-
-// recursively display
+// simple Display  and count size
 void display(Node* head){
-    if(head == NULL) return ;
-    cout<<head->val<<" ";
-    display(head->next);
+    Node* temp = head;
+    int count = 0;
+    while(temp != NULL){
+        cout<<temp->val<<" ";
+        temp = temp->next;
+        count++;
+    }
+    cout<<endl;
+    cout<<"Length of Linked List is: "<<count<<endl;
 }
+
+// // recursively display
+// void display(Node* head){
+//     if(head == NULL) return ;
+//     display(head->next); 
+//     cout<<head->val<<" ";
+//     // display(head->next);
+// }
 
 int main(){
     Node* a = new Node(10);
