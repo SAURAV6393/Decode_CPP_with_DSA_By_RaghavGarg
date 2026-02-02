@@ -27,6 +27,12 @@ public:
         }
         cout<<endl;
     }
+    // reverse display function
+    void reverseDisplay(Node* node){
+        if(node == NULL) return;
+        reverseDisplay(node->next);
+        cout<<node->val<<" -> ";
+    }
     // insert at tail function
     void insertAtTail(int val){
         Node* temp = new Node(val);
@@ -118,6 +124,20 @@ public:
             size--;
         }
     }
+    void deleteAtNode(Node* node){
+        if(size == 0) {cout<<"List is empty"<<endl; return;}
+        else if(size == 1) head = tail = NULL;
+        else{
+            Node* temp = head;
+            while(temp->next != node){
+                temp = temp->next;
+            }
+            temp->next = node->next;
+            if(node == tail) tail = temp;
+            delete node;
+        }
+        size--;
+    }
 };
 int main(){
     // int* arr[] = new int[];  // dynamic array
@@ -143,6 +163,6 @@ int main(){
     ll.deleteAtTail(); // { head = 10->15->20->40->NULL; }
     ll.display();
     ll.deleteAtIdx(1); // { head = 10->20->40->NULL; }
-
-
+    ll.deleteAtNode(ll.head->next); // { head = 10->40->NULL; }
+    ll.display();
 }
