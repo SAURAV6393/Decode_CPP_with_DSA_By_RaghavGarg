@@ -42,7 +42,7 @@ int main(){
     d->next = e;
     Node* head = a;
     display(head); // 10 -> NULL
-    deleteAtNode(head,d);
+    head = deleteAtNode(a,a);
     display(head); // 10 -> 20 -> 30 -> 50 -> NULL
 
 
