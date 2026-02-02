@@ -17,13 +17,13 @@ void display(Node* head){
     }
     cout<<endl;
 }
-Node* deleteAtNode(Node* head, Node* target){
-    if(head == target){
+Node* deleteAtNode(Node* head, int targetVal){
+    if(head->val == targetVal){
         head = head->next;
         return head;
     }
     Node* temp = head;
-    while (temp->next != target)
+    while (temp->next->val  != targetVal)
     {
         temp = temp->next;
     }
@@ -42,7 +42,7 @@ int main(){
     d->next = e;
     Node* head = a;
     display(head); // 10 -> NULL
-    head = deleteAtNode(a,a);
+    head = deleteAtNode(head,30);
     display(head); // 10 -> 20 -> 30 -> 50 -> NULL
 
 
