@@ -38,7 +38,7 @@ class LinkedList{
             head = head->next;
             return head;
         }
-        // nth element from end = (len - n + 1) from start
+        // nth element from end = (len - n + 1) from start (brute force approach)
         int m = len - n + 1;
         int idx = m - 1; // the idx of node to be deleted
         temp = head;
@@ -50,7 +50,7 @@ class LinkedList{
         display(head);
         return head;
     }
-    // alternate approach use slow and fast pointer 
+    // alternate approach use slow and fast pointer  
     Node* removeNthFromEndBest(Node* head, int n) {
         Node* slow  = head;
         Node* fast  = head;
