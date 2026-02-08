@@ -1,32 +1,68 @@
-# Decode_CPP_with_DSA_By_RaghavGarg 💻✨
+# Decode_CPP_with_DSA_By_RaghavGarg
 
-🚀 **Welcome to the Ultimate C++ and DSA Journey!** 🚀
+A structured learning repository for **C++ Programming** and **Data Structures & Algorithms (DSA)**, based on concepts taught by **Raghav Garg Sir** and implemented through consistent practice.
 
-Dive into the world of **C++ Programming** and **Data Structures & Algorithms (DSA)** with insights from **Raghav Garg Sir**. This repository is your go-to resource whether you're just starting out or looking to polish your coding skills to perfection!
-
-## 🌟 What's Inside?
-- 📘 **Deep Dives into Core C++ Concepts:** From basics to advanced topics.
-- 🧩 **Practical DSA Implementations:** Real-world examples that you can use.
-- 🔧 **Hands-On Coding Examples:** Enhance your understanding with practical examples.
-- 🎯 **Crack Coding Interviews:** Proven problem-solving techniques.
-
-## 📌 Key Features
-- 🌱 **Beginner-Friendly Tutorials:** Easy-to-follow lessons that build your foundation.
-- 🏆 **Competitive Programming Ready:** Structured lessons to sharpen your skills.
-- 🖥️ **Code Snippets and Explanations:** Every topic is clearly explained with code examples.
-- 🌐 **Regular Updates:** Stay up-to-date with the latest trends and techniques.
-
-## 🚀 Get Started
-1. **Clone this repository:**
-   ```bash
-   git clone https://github.com/your-username/Decode_CPP_with_DSA_By_RaghavGarg.git
-   ```
-2. **Explore the Topics:** Navigate through folders for organized content.
-3. **Practice Makes Perfect:** Consistent practice to enhance your skills.
-
-## 🌐 Stay Connected
-For more updates and resources, follow along. Let's decode C++ and DSA together and unlock your coding potential!
+This repository focuses on **strong fundamentals, clean code, and logical problem-solving**.
 
 ---
 
-Feel free to tweak it further! If you need any more help or have specific requests, I'm here to assist. 😊
+## 📌 About
+
+This repository contains my personal learning journey in **C++ and DSA**.  
+All topics are organized in a simple, progressive manner to help with **concept clarity, revision, and interview preparation**.
+
+It is suitable for:
+- Beginners starting with C++
+- Students learning DSA step by step
+- Interview revision and practice
+
+---
+
+## 📂 Contents
+
+- **C++ Fundamentals**
+  - Basics & syntax
+  - Control statements & loops
+  - Functions & arrays
+  - Strings, pointers, and references
+  - Object-Oriented Programming (OOP)
+
+- **Data Structures & Algorithms**
+  - Arrays & vectors
+  - Linked lists
+  - Stack & queue
+  - Searching and sorting
+  - Recursion and basic problem-solving patterns
+
+- **Practice Code**
+  - Clean and readable implementations
+  - Logic-focused solutions
+  - Beginner-friendly explanations in code
+
+---
+
+## 🎯 Purpose
+
+- Build a strong foundation in **C++**
+- Improve **DSA problem-solving skills**
+- Prepare for **coding interviews**
+- Maintain an organized **revision repository**
+
+This repository is updated as learning progresses.
+
+---
+
+## 🚀 How to Use
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/SAURAV6393/Decode_CPP_with_DSA_By_RaghavGarg.git
+
+2. Navigate topic-wise through folders
+3. Read, understand, and practice the code regularly
+
+👤 Author
+Saurav Rajput
+B.Tech (CSE – Data Science)
+GitHub: https://github.com/SAURAV6393
+
