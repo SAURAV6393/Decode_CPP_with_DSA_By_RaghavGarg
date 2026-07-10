@@ -1,36 +1,40 @@
 #include<bits/stdc++.h>
-#include<stack>
 using namespace std;
+
 int main(){
     stack<int> st;
-    // filling 
     st.push(10);
     st.push(20);
     st.push(30);
     st.push(40);
     st.push(50);
 
-    // Using two stack 
     stack<int> temp;
+    stack<int> dummy;
+
+    // st -> temp
     while(!st.empty()){
-        int x = st.top();
+        temp.push(st.top());
         st.pop();
-        temp.push(x);
     }
-    
-    // push element temp to dummy
-     stack<int> dummy;
+
+    // temp -> dummy
     while(!temp.empty()){
-        int x = temp.top();
+        dummy.push(temp.top());
         temp.pop();
-        dummy.push(x);
     }
 
-     // push element dummy to st
+    // dummy -> st
     while(!dummy.empty()){
-        int x = dummy.top();
+        st.push(dummy.top());
         dummy.pop();
-        dummy.push(x);
     }
 
+    // print reversed stack
+    while(!st.empty()){
+        cout << st.top() << " ";
+        st.pop();
+    }
+
+    return 0;
 }
