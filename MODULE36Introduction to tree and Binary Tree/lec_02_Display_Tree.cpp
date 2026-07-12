@@ -1,4 +1,4 @@
-#include<iostream>
+#include<bits/stdc++.h>
 using namespace std;
 class Node{ // This is a TreeNode
 public: 
@@ -12,8 +12,15 @@ public:
     }
 };
 
+void displayTree(Node* root){
+    if(root == NULL) return;
+    cout<<root->val<<" ";
+    displayTree(root->left);
+    displayTree(root->right);
+}
+
 int main(){
-    Node* a = new Node(1);
+    Node* a = new Node(1); // root
     Node* b = new Node(2);
     Node* c = new Node(3);
     Node* d = new Node(4);
@@ -27,4 +34,7 @@ int main(){
     b->right = e;
     c->left = f;
     c->right = g;
+
+    // call diplay function
+    displayTree(a);
 }
