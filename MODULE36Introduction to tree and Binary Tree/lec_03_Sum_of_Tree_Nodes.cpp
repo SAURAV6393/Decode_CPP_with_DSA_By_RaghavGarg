@@ -45,3 +45,45 @@ int main(){
     //displayTree(a);
     cout<<"Sum of Tree is : "<<sum(a);
 }
+
+//            10
+//          /    \
+//        20      30
+//       /  \    /  \
+//     40   50  60  70
+
+//     sum(root) = root->val + sum(root->left) + sum(root->right)
+
+//  🌳 Call Stack Visualization
+ 
+//  sum(10)
+// │
+// ├── sum(20)
+// │   │
+// │   ├── sum(40)
+// │   │      ├── sum(NULL)=0
+// │   │      └── sum(NULL)=0
+// │   │      return 40
+// │   │
+// │   └── sum(50)
+// │          ├── sum(NULL)=0
+// │          └── sum(NULL)=0
+// │          return 50
+// │
+// │   return 110
+// │
+// └── sum(30)
+//     │
+//     ├── sum(60)
+//     │      ├── sum(NULL)=0
+//     │      └── sum(NULL)=0
+//     │      return 60
+//     │
+//     └── sum(70)
+//            ├── sum(NULL)=0
+//            └── sum(NULL)=0
+//            return 70
+
+//     return 160
+
+// return 280
