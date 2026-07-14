@@ -17,11 +17,11 @@ public:
 };
 
 // height = levels - 1
-int maxDepth(TreeNode *root)
+int levels(TreeNode *root)                 // levels or maxDepth
 { // find number of levels of binary tree
     if (root == NULL) return 0;
-    int leftHeight = maxDepth(root->left);
-    int rightHeight = maxDepth(root->right);
+    int leftHeight = levels(root->left);
+    int rightHeight = levels(root->right);
     return 1 + max(leftHeight, rightHeight);
 }
 
@@ -42,16 +42,16 @@ int main()
     c->left = f;
     c->right = g;
 
-    cout << "Number of levels in the binary tree is: " << maxDepth(a) << endl;
+    cout << "Number of levels in the binary tree is: " << levels(a) << endl;
 
     return 0;
 }
 
 //         10
 //       /    \
-    //     20      30
+  //   20      30
 //    /  \    /  \
-    //  40   50  60  70
+//  40   50  60  70
 
 //     Recursive Call Tree
 
