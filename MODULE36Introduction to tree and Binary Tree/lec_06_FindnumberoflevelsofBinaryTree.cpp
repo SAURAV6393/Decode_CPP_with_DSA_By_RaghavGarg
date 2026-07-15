@@ -17,7 +17,7 @@ public:
 };
 
 // height = levels - 1
-int levels(TreeNode *root)                 // levels or maxDepth
+int levels(TreeNode* root)                 // levels or maxDepth
 { // find number of levels of binary tree
     if (root == NULL) return 0;
     int leftHeight = levels(root->left);
